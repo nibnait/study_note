@@ -49,16 +49,11 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Study_Note",
-		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Study_Note/[杂]小工具",
-		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Study_Note/Dubbo学习",
-		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Study_Note/git",
-		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Study_Note/image",
-		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Study_Note/Netty学习",
-		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Study_Note/小马哥"
+		"/Users/tianbin/Library/Mobile Documents/com~apple~CloudDocs/Study_Note"
 	],
 	"file_history":
 	[
+		"/Users/tianbin/Library/Mobile Documents/com~apple~CloudDocs/Study_Note/[杂]小工具/我的MBP.md",
 		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Study_Note/Dubbo学习/1022直播.md",
 		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Study_Note/小工具/我的MBP.md",
 		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Sublime Text/学习笔记/git/git_rebase.md",
@@ -185,12 +180,11 @@
 		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Sublime Text/周报/1.58+12.8+3.28+3.28+3.98+",
 		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Sublime Text/周报/6月10日取消失败异常单",
 		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Sublime Text/周报/6月10日结算超时单",
-		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Sublime Text/周报/结算超时单",
-		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Sublime Text/周报/0606"
+		"/Users/nibnait/Library/Mobile Documents/com~apple~CloudDocs/Sublime Text/周报/结算超时单"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -228,7 +222,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -269,7 +263,7 @@
 	"project": "study.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
