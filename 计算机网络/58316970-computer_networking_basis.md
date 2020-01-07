@@ -52,13 +52,13 @@ date: 2019-06-30 02:48:16
 
 ## TCP/IP的诞生：  
 
-![《图解TCP/IP》 P53 表2.1](http://tb.nsfocus.co/image/58316970-1.png)
+![《图解TCP/IP》 P53 表2.1](../image/58316970-1.png)
 
 20世纪90年代，ISO展开了OSI这一国际标准协议的标准化进程。然而，OSI协议并没有得到普及，真正被广泛使用的是TCP/IP协议。究其原因，是因为[TCP/IP的标准化过程](http://nibnait.com/c09ed94b-TCP-IP-standardization-process/)是一个极其**注重实用性**的一个流程。
 
 ## TCP/IP与OSI参考模型
 
-![《图解TCP/IP》 P64 图2.8](http://tb.nsfocus.co/image/58316970-2.png)
+![《图解TCP/IP》 P64 图2.8](../image/58316970-2.png)
 
 
 # 数据链路层
@@ -97,7 +97,7 @@ date: 2019-06-30 02:48:16
  - 以太网帧格式：
 
 
-![Ethernet V2](http://tb.nsfocus.co/image/58316970-3.png)
+![Ethernet V2](../image/58316970-3.png)
 
 
  - VLAN(virtual LAN，虚拟局域网)
@@ -112,7 +112,7 @@ date: 2019-06-30 02:48:16
 >	拨号上网时，一个将IP数据报**封装**到串行链路的**方法**。
 
 
-![Ethernet V2](http://tb.nsfocus.co/image/58316970-4.png)
+![Ethernet V2](../image/58316970-4.png)
 
 主要功能：
 
@@ -124,7 +124,7 @@ date: 2019-06-30 02:48:16
 
 ## IP协议：尽力而为(面向无连接的)
 
-![IPv4地址的定义](http://tb.nsfocus.co/image/58316970-5.png)
+![IPv4地址的定义](../image/58316970-5.png)
 
 
 一些特殊的IP地址：
@@ -142,16 +142,16 @@ date: 2019-06-30 02:48:16
 >在本地网络中使用私有地址，在连接互联网时转而使用全局IP地址的技术。
 
 
-![](http://tb.nsfocus.co/image/58316970-6.png)
+![](../image/58316970-6.png)
 
  - 潜在问题：①无法从NAT外部向内部服务器建立连接；②转换表的生成与转换操作都会产生一定的开销。
 
  - 解决地址短缺的最佳途径还是：普及IPv6。
 
 ## IPv6
-![](http://tb.nsfocus.co/image/58316970-7.png)
+![](../image/58316970-7.png)
 
-附：[IPv4与IPv6数据报格式详解.png](http://tb.nsfocus.co/image/58316970-ipv4-ipv6.png)
+附：[IPv4与IPv6数据报格式详解.png](../image/58316970-ipv4-ipv6.png)
 
 ## IP报文的分片与重组
 
@@ -165,9 +165,9 @@ date: 2019-06-30 02:48:16
 
 >	发送端主机根据IP地址，广播寻找其对应的MAC地址，（只适用于IPv4，IPv6中则可以用ICMPv6替代ARP发送邻居探索消息）实现链路内的IP通信。
 
-![ARP工作机制](http://tb.nsfocus.co/image/58316970-8.png)
+![ARP工作机制](../image/58316970-8.png)
 
-附：[ARP包格式.png](http://tb.nsfocus.co/image/58316970-9.png)
+附：[ARP包格式.png](../image/58316970-9.png)
 
  - ARP缓存表  
 	通常发送端和接受端会把自己接收到的 带有IP地址和MAC地址的ARP响应包/ARP请求包中的信息缓存20分钟。以防止ARP包在网络中被大量广播，造成网络拥塞。
@@ -181,22 +181,22 @@ date: 2019-06-30 02:48:16
 >	将ARP反过来，从MAC地址定位IP地址。用于将打印机服务器等小型嵌入式设备接入到网络时。
 
 
-![RARP工作机制](http://tb.nsfocus.co/image/58316970-10.png)
+![RARP工作机制](../image/58316970-10.png)
 
 
 ## 辅助IP的ICMP▼
 >	用于IP通信过程中，确认网络是否正常工作，以及遇到异常时进行问题的诊断。
 
 
-![](http://tb.nsfocus.co/image/58316970-11.png)
+![](../image/58316970-11.png)
 
-![](http://tb.nsfocus.co/image/58316970-12.png)
+![](../image/58316970-12.png)
 
 附：[《计算机网络-进阶》--ICMP报文消息类型详解](http://tianbin.leanote.com/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%BF%9B%E9%98%B6)
 
 ## ICMPv6
 
-![](http://tb.nsfocus.co/image/58316970-13.png)
+![](../image/58316970-13.png)
 
 
 附：[《计算机网络-进阶》--ICMPv6的邻居探索](http://tianbin.leanote.com/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%BF%9B%E9%98%B6)
@@ -205,13 +205,13 @@ date: 2019-06-30 02:48:16
 
  - 在使用DHCP之前，需先将DHCP所要分配的IP地址池、相应的子网掩码，默认路由控制信息，DNS服务器地址设置到服务器上。
 
-	![DHCP的工作原理](http://tb.nsfocus.co/image/58316970-14.png)
+	![DHCP的工作原理](../image/58316970-14.png)
 
  - DHCP中继代理
 
 	使用DHCP中继代理之后，对不同网段的IP地址的分配也可以由一个DHCP服务器统一进行管理和维护。
 
-	![](http://tb.nsfocus.co/image/58316970-15.png)
+	![](../image/58316970-15.png)
 
 ## 路由选择算法
 
@@ -232,7 +232,7 @@ date: 2019-06-30 02:48:16
 
  - RIP2  
 	与RIP第一版的工作机制基本相同，增加了一些新的特点：
-	![](http://tb.nsfocus.co/image/58316970-16.png)		
+	![](../image/58316970-16.png)		
 
 
 ### 链路状态算法(Link-State)
@@ -245,10 +245,10 @@ date: 2019-06-30 02:48:16
 	 - 对每条链路，对不同的TOS(服务类型)，设置多种费用测度
 	 - 在大规模网络中，用层次的OSPF
 
-	附：[OSPF的工作机制.png](http://tb.nsfocus.co/image/58316970-18.png)
+	附：[OSPF的工作机制.png](../image/58316970-18.png)
 	
 	 - 层次OSPF
-![](http://tb.nsfocus.co/image/58316970-17.png)
+![](../image/58316970-17.png)
 
 
 ### BGP▼ - 路径向量型协议
@@ -276,9 +276,9 @@ date: 2019-06-30 02:48:16
 
 首部格式：  
 
-![UDP数据报格式](http://tb.nsfocus.co/image/58316970-19.png)
+![UDP数据报格式](../image/58316970-19.png)
 
-附：[UDP数据报首部“校验和”字段详解.png](http://tb.nsfocus.co/image/58316970-UDP.png)
+附：[UDP数据报首部“校验和”字段详解.png](../image/58316970-UDP.png)
 
 ## TCP——传输控制协议
 目的：通过IP数据报实现可靠性传输
@@ -293,15 +293,15 @@ date: 2019-06-30 02:48:16
 
 首部格式：  
 
-![TCP数据报格式](http://tb.nsfocus.co/image/58316970-20.png)
+![TCP数据报格式](../image/58316970-20.png)
 
 
-附：[TCP数据报首部格式各字段详解.png](http://tb.nsfocus.co/image/58316970-TCP.png)
+附：[TCP数据报首部格式各字段详解.png](../image/58316970-TCP.png)
 
 ### TCP连接的建立与终止：  
 (传说中的三次握手与四次挥手)  
 
-![](http://tb.nsfocus.co/image/58316970-21.png)
+![](../image/58316970-21.png)
 
 1. 在数据通信之前，主机A通过TCP首部发送一个SYN包作为建立连接的请求（ACK=0,SYN=1，声明一个起始序号seq=x）等待确认应答
 2. 主机B收到A要建立连接的请求，返回一个允许连接的SYNACK报文段（ACK=1,SYN=1，主机B的起始序号seq=y，确认应答号ack=x+1）
@@ -315,9 +315,9 @@ A收到B的确认后，进入等待状态，等待B请求释放连接。
  - 虽然三次握手方式管理TCP连接可以更好地避免无连接，但这种协议为DOS攻击▼（更确切的说是SYN洪泛攻击▼）提供了可乘之机。
 
 ### 使用序列号和确认应答号实现顺序控制、窗口控制与重发控制
-![确认应答未能返回](http://tb.nsfocus.co/image/58316970-23.png)
+![确认应答未能返回](../image/58316970-23.png)
 
-![数据报文未能送达](http://tb.nsfocus.co/image/58316970-24.png)
+![数据报文未能送达](../image/58316970-24.png)
 
 
 ## 其他传输层协议
@@ -326,14 +326,14 @@ A收到B的确认后，进入等待状态，等待B请求释放连接。
  - SCTP（Stream Control Transmission Protocol，流控制传输协议）
  - DCCP（Datagram Congestion Control Protocol，数据报拥塞控制协议）
 
-附：[已经步入实用阶段的几个传输层协议详解.png](http://tb.nsfocus.co/image/58316970-25.png)
+附：[已经步入实用阶段的几个传输层协议详解.png](../image/58316970-25.png)
 
 # 应用层
 
 。。。写不动了
 
 
-附：[几道常考的计算题.pptx](http://tb.nsfocus.co/ppt/58316970-%E8%AE%A1%E7%AE%97%E9%A2%98.pptx)
+附：[几道常考的计算题.pptx](../ppt/58316970-%E8%AE%A1%E7%AE%97%E9%A2%98.pptx)
 
 -----
 本文中提到的一些专有名词：
@@ -360,7 +360,7 @@ A收到B的确认后，进入等待状态，等待B请求释放连接。
  - OSPF：Open Shortest Path First
  - BGP(Border Gateway Protocol)：边界网关协议
  - 已失效的连接请求报文段：
-	![已失效的连接请求报文段](http://tb.nsfocus.co/image/58316970-22.png)
+	![已失效的连接请求报文段](../image/58316970-22.png)
  - DOS攻击：deny of service
  - SYN洪泛攻击:攻击者发送大量的TCP SYN报文段，而有意不进行第三次握手的步骤，直至服务器消耗完为第一次握手连接保留的有限资源。
  - TIME_WAIT状态： 在TIME_WAIT状态中，如果TCP client端最后一次发送的ACK丢失了，它将重新发送。TIME_WAIT状态中所需要的时间是依赖于实现方法的。典型的值为30秒、1分钟和2分钟。等待之后连接正式关闭，并且所有的资源(包括端口号)都被释放。

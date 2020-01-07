@@ -36,9 +36,9 @@ date: 2019-06-30 03:01:35
 
 
 # Java虚拟机的基本结构
-![Java虚拟机的基本结构](http://tb.nsfocus.co/image/6f8dd084-1.png)
+![Java虚拟机的基本结构](../image/6f8dd084-1.png)
 
- - Java栈：由**栈帧**组成，一个函数对应一个栈帧(函数被调用-->入栈)，[栈顶---当前正在运行的函数]，[弹栈-->①函数正常return;②Exception]![栈帧的结构](http://tb.nsfocus.co/image/6f8dd084-2.png)
+ - Java栈：由**栈帧**组成，一个函数对应一个栈帧(函数被调用-->入栈)，[栈顶---当前正在运行的函数]，[弹栈-->①函数正常return;②Exception]![栈帧的结构](../image/6f8dd084-2.png)
  - 方法区：
 	 - JDK1.6、1.7 ==> 又叫永久区(Perm)
 	 - JDK1.8 ==> 叫元数据区(Metaspace)，(默认 可以吃掉所有系统可用内存)
@@ -73,7 +73,7 @@ date: 2019-06-30 03:01:35
 ## 5. 分代算法    
 	
 	即 新生代用“**改良的复制算法**”，老年代用“**标记压缩清除法**”
-	![改良的复制算法](http://tb.nsfocus.co/image/6f8dd084-3.png)
+	![改良的复制算法](../image/6f8dd084-3.png)
 
 
 	 - 栈上分配：基于逃逸分析技术，将线程私有的*小对象*打散分配到Java栈上。（函数调用结束后，会自行销毁，不需要垃圾回收器介入从而提高了性能）
@@ -107,11 +107,11 @@ date: 2019-06-30 03:01:35
  - 并发重置：重新初始化CMS数据结构和数据
 
 ## 2. G1回收器(Garbage First)
-![](http://tb.nsfocus.co/image/6f8dd084-4.png)
+![](../image/6f8dd084-4.png)
 
  - 新生代GC：回收处理Eden和SurvivorA区。==> 老年代的区域增多
  - 并发标记周期：
-![](http://tb.nsfocus.co/image/6f8dd084-5.png)
+![](../image/6f8dd084-5.png)
 SATB(Snapshot-At-The-beginning)：在初始标记时为存活对象建立的快照
  - 混合回收
 	 - 正常的年轻代GC(改良的复制算法)
@@ -123,7 +123,7 @@ SATB(Snapshot-At-The-beginning)：在初始标记时为存活对象建立的快�
 
 # Class装载系统
 ## 1. 类装载步骤
-![类装载步骤](http://tb.nsfocus.co/image/6f8dd084-6.png)
+![类装载步骤](../image/6f8dd084-6.png)
 	 - 加载：解析类方法区内的数据结构 并创建实例
 	 - 验证：class文件格式、语义检查、字节码验证、符号引用验证...
 	 - 准备：为类在Java堆中分配空间，设置初始值
@@ -132,7 +132,7 @@ SATB(Snapshot-At-The-beginning)：在初始标记时为存活对象建立的快�
 
 
 ## 2. 双亲委托模式(系统默认使用)
-![双亲委托模式](http://tb.nsfocus.co/image/6f8dd084-7.png)
+![双亲委托模式](../image/6f8dd084-7.png)
 
 在类加载的时候，
 			

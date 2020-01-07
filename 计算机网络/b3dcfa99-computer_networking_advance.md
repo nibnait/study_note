@@ -24,14 +24,14 @@ date: 2019-06-30 02:49:16
 #1. 网络层
 
 ## IP多播：
-![](http://tb.nsfocus.co/image/b3dcfa99-1.png)
+![](../image/b3dcfa99-1.png)
 
-附：[既定已知的多播地址.png](http://tb.nsfocus.co/image/b3dcfa99-2.png)
+附：[既定已知的多播地址.png](../image/b3dcfa99-2.png)
 
 
 ## IP隧道
 
-![](http://tb.nsfocus.co/image/b3dcfa99-3.png)
+![](../image/b3dcfa99-3.png)
 
 用处：
 
@@ -44,11 +44,11 @@ date: 2019-06-30 02:49:16
 
 ## IPv6的地址结构
 
-![](http://tb.nsfocus.co/image/b3dcfa99-4.png)
+![](../image/b3dcfa99-4.png)
 
 ## 路径MTU发现
 
-![](http://tb.nsfocus.co/image/b3dcfa99-5.png)
+![](../image/b3dcfa99-5.png)
 
 ## ICMP报文消息类型详解
  - ICMP目标不可达消息（类型3）
@@ -59,13 +59,13 @@ date: 2019-06-30 02:49:16
 
  - ICMP重定向消息（类型5）
 
-![](http://tb.nsfocus.co/image/b3dcfa99-6.png)
+![](../image/b3dcfa99-6.png)
 
  - ICMP超时消息（类型11）
 
 	 当TTL==0时，IP路由器就会给发送端主机返回一个 ICMP超时消息。  
 	应用：tracerouter。  
-![](http://tb.nsfocus.co/image/b3dcfa99-7.png)
+![](../image/b3dcfa99-7.png)
 
  - ICMP回送消息（类型0、8）
 
@@ -82,9 +82,9 @@ date: 2019-06-30 02:49:16
 
 ## ICMPv6的邻居探索
 
-![](http://tb.nsfocus.co/image/b3dcfa99-9.png)
+![](../image/b3dcfa99-9.png)
 	
-附：[ICMPv6常用的报文消息类型](http://tb.nsfocus.co/image/b3dcfa99-10.png)
+附：[ICMPv6常用的报文消息类型](../image/b3dcfa99-10.png)
 
 
 

@@ -23,7 +23,7 @@ mathjax: true
 
 比如（39.923201, 116.390705）这个点，纬度的范围是（-90，90），其中间值为0。对于纬度39.923201，在区间（0，90）中，因此得到一个1；（0，90）区间的中间值为45度，纬度39.923201小于45，因此得到一个0，依次计算下去，即可得到纬度的二进制表示，如下表：
 
-![geohash_4](http://tb.nsfocus.co/image/geohash_4.png)
+![geohash_4](../image/geohash_4.png)
 
 最后得到纬度的二进制表示为：10111000110001111001
 
@@ -41,7 +41,7 @@ mathjax: true
 
 将上一步合并后的二进制数转换为十进制，然后生成对应的Base32码（0-9,a-z 去掉 a,i,l,o 四个字母）。同理，将编码转换成经纬度的解码算法与之相反，具体不再赘述。
 
-![geohash_base32](http://tb.nsfocus.co/image/geohash_base32.png)
+![geohash_base32](../image/geohash_base32.png)
 
 上述合并后的二进制编码后的结果为：
 
@@ -52,7 +52,7 @@ wx4g0ec1
 由此可见编码越长，表示的范围越小，位置也越精确。
 下表摘自[维基百科](https://www.wikiwand.com/en/Geohash#/Number_of_geohash_characters_and_precision_in_km)：
 
-![geohash_precision](http://tb.nsfocus.co/image/geohash_precision.png)
+![geohash_precision](../image/geohash_precision.png)
 
 可以看出，当geohash base32编码长度为8时，精度在19米左右，而当编码长度为9时，精度在2米左右，编码长度需要根据数据情况进行选择。
 
@@ -64,13 +64,13 @@ wx4g0ec1
 
 这就要从GeoHash算法编码原理的起源说起了，简称“二刀法”：将空间划分为四块，编码的顺序分别是左下角00，左上角01，右下脚10，右上角11，也就是类似于Z的曲线，当我们递归的将各个块分解成更小的子块时，编码的顺序是自相似的，每一个子块也形成Z曲线，这种类型的曲线被称为**Peano空间填充曲线**。
 
-![geohash_1](http://tb.nsfocus.co/image/geohash_1.png)
-![geohash_2](http://tb.nsfocus.co/image/geohash_2.png)
+![geohash_1](../image/geohash_1.png)
+![geohash_2](../image/geohash_2.png)
 
 但是Peano空间填充曲线最大的缺点就是突变性，有些编码相邻但距离却相差很远，比如0111与1000，编码是相邻的，但距离相差很大。
 
 除Peano空间填充曲线外，还有很多空间填充曲线，如图所示，其中效果公认较好是Hilbert空间填充曲线，相较于Peano曲线而言，Hilbert曲线没有较大的突变。为什么GeoHash不选择Hilbert空间填充曲线呢？可能是Peano曲线思路以及计算上比较简单吧，事实上，Peano曲线就是一种四叉树线性编码方式。
-![geohash_3](http://tb.nsfocus.co/image/geohash_3.png)
+![geohash_3](../image/geohash_3.png)
 
 # 使用问题
 

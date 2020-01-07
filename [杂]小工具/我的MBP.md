@@ -60,7 +60,7 @@ JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-a
     vim ~/.zshrc
     G 
     o
-    cd /Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/Study_Note/
+    alias study="cd /Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/Study_Note/"
     source ~/.zshrc
 
 
