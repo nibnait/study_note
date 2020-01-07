@@ -15,10 +15,10 @@ Map、List、Set
 <!--more-->
 
 # 接口继承关系
-![接口继承关系](https://tb.nsfocus.co/image/Interface_inheritance_relationship.png)
+![接口继承关系](../image/Interface_inheritance_relationship.png)
 
 # Map
-![各种Map的依赖关系](https://tb.nsfocus.co/image/Map_class_diagram.png)
+![各种Map的依赖关系](../image/Map_class_diagram.png)
 
 ## HashMap
 是根据key的hashCode来存储数据，因此get和put的时间复杂度为O(1)，但遍历的顺序是不确定的。  
@@ -103,7 +103,7 @@ JDK1.6之后引入的ConcurrentSkipListMap。它是将元素的Key基于SkipList
 因此 ConcurrentSkipListMap 适合处理高并发也需要对Map键值进行排序的场景。
 
 # List
-![各种List的依赖关系](https://tb.nsfocus.co/image/List_class_diagram.png)
+![各种List的依赖关系](../image/List_class_diagram.png)
 
 ## ArrayList
 ArrayList是一个可变长数组，初始化capacity = 10。
@@ -125,7 +125,7 @@ push() == addFirst()
 CopyOnWrite，在写的时候会把数据复制一份出来，供其他线程来读。适用于写操作比较少，且能够容忍短暂的读写不一致的高并发场景。
 
 # Set
-![各种Set依赖关系](https://tb.nsfocus.co/image/Set_class_diagram.png)
+![各种Set依赖关系](../image/Set_class_diagram.png)
 
 ## HashSet
 HashSet的内部是一个HashMap，add操作时，直接调用的`map.put(e, PRESENT)`方法。即如果元素不存在 则直接将其添加进map中，如果元素已存在则return false;

@@ -69,6 +69,12 @@ JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-a
 
 ssh-keygen -t rsa -C "tb@alibaba-inc.com"  
 git config --global --edit  
+git config --global core.ignorecase false  
 
 git config --global user.name  
 git config --global user.email  
+
+
+
+-javaagent:/Users/nibnait/jetbrains-agent.jar
+
