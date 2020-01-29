@@ -77,7 +77,7 @@ Kmax：所有这些K中，最大的那个值。（它一定小于等于N）
 
 只有当数据量上来的时候，做这种统计估计才有意义。同时HLL算法为了节省空间，引入了分桶平均的概念。基本原理是：将统计数据划分为m个桶（将元素的二进制hash % m），分别统计各个桶的$$k_{max}$$值，求调和平均数（所有数的倒数的平均数，可以消除掉极大值和极小值对平均数结果带来的误差），进而得出整个集合的基数预估值 N。
 
-Java代码实现：[HyperLogLogCounting](https://github.com/nibnait/algorithm/blob/master/src/main/java/redis/HyperLogLog/HyperLogLogCounting.java)
+Java代码实现：[HyperLogLogCounting](https://github.com/nibnait/algorithms/blob/master/src/main/java/redis/HyperLogLog/HyperLogLogCounting.java)
 
 ## 偏差修正
 

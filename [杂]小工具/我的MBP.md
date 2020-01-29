@@ -20,6 +20,9 @@
 ### [XCode](https://developer.apple.com/download/more/?=xcode)
 ### [clean my mac](https://macpaw.com/cleanmymac)
 ### [MarginNote](https://www.marginnote.com/chinese/home)
+
+[Sourcetree](https://www.sourcetreeapp.com/)
+
 ### [Sublime Text 3](https://www.sublimetext.com/)
 
 ```
@@ -39,6 +42,34 @@ Preferences —> Key Bindings：
 ```
 
 ### [idea](https://www.jetbrains.com/idea/)
+
+历史版本：[https://www.jetbrains.com/idea/download/other.html](https://www.jetbrains.com/idea/download/other.html)
+
+```
+"Configure" 或 "Help" -> "Edit Custom VM Options ..."：
+-javaagent:/Users/nibnait/jetbrains-agent.jar
+-javaagent:/Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/pirvate Files/jetbrains-agent.jar
+
+License server激活：http://jetbrains-license-server
+
+Code Templates：
+/*
+
+Created by ${USER} on ${DATE}
+ */
+public class ${NAME} extends TestCase {
+
+    @Test
+    public void testCase() {
+
+    }
+
+
+}
+```
+
+
+
 JDK 1.8：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  
 JDK 1.7：http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html  
 JDK 1.6：http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html  
@@ -67,14 +98,35 @@ JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-a
 ### [maven](https://maven.apache.org/download.cgi)
 ### [gradle](https://gradle.org/releases/)
 
-ssh-keygen -t rsa -C "tb@alibaba-inc.com"  
-git config --global --edit  
-git config --global core.ignorecase false  
+ssh-keygen -t rsa -C "w@tianbin.org"  
 
-git config --global user.name  
-git config --global user.email  
+git config --global user.name nibnait  
+git config --global user.email  w@tianbin.org
+
+```
+git config --edit
+[core]
+        ignorecase = false
+```
+
+```
+git config --global --edit
+[user]
+        name = nibnait
+        email = w@tianbin.org
+[core]
+        ignorecase = false                  
+```
 
 
 
--javaagent:/Users/nibnait/jetbrains-agent.jar
+### Chrome插件
 
+Web前端助手（FeHelper）- crx文件安装方法
+
+安装方法
+
+1. 下载当前最新版`*.crx`  [https://github.com/zxlie/FeHelper/tree/master/apps/static/screenshot/crx](https://github.com/zxlie/FeHelper/tree/master/apps/static/screenshot/crx)
+2. chrome浏览器地址栏输入：[chrome://extensions/](chrome://extensions/) 并打开
+3. 右上角开启`开发者模式`
+4. 拖拽crx到当前页面，完成安装

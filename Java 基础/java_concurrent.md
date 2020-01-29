@@ -46,7 +46,7 @@ NIO适用于连接数多且连接较短的场景比如聊天服务器。AIO适�
 当修饰静态方法的时候,锁定的是当前类的Class对象,在上面的例子中就是Class X
 当修饰非静态方法的时候,锁定的是当前实例对象this
 
-synchronized关键字 及wait()、notify()、notifyAll()共同组成了 [管程](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/BlockedQueue.java)（管理共享变量 以及对共享变量的操作过程） 
+synchronized关键字 及wait()、notify()、notifyAll()共同组成了 [管程](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/BlockedQueue.java)（管理共享变量 以及对共享变量的操作过程） 
 
 与Lock相比：
  - 都是可重入锁
@@ -55,7 +55,7 @@ synchronized关键字 及wait()、notify()、notifyAll()共同组成了 [管程]
     LockInterruptibly()方法可以中断自己，也可以被其他线程中断。Lock必须手动unlock()，否则会造成死锁
     - 使用synchronized，有时等待线程会一直等下去，不会响应中断
     - Lock 还可以滴啊用await() 方法让出锁资源，同时调用notify() 通知其他线程来重新获取资源。
- 
+
 synchronized适合低并发的场景，锁竞争发生的概率很小，此时锁处于偏向锁或者轻量级锁状态，因此性能更加好，比如jdk1.8concurrentHashMap使用synchronized的原因就是，每个hash槽上的锁竞争很少，用synchronized比lock更好
 
 # 锁
@@ -68,17 +68,17 @@ AbstractQueuedSynchronizer 是一个抽象类，内部提供了一个基于CLH �
 共享锁（ReeantrantReadWriteLock, Semaphore, CountDownLatch），内部实现的是AQS的acquireShared() 和releaseShared() 方法。
 
 以ReentrantLock 的公平锁和非公平锁为例，详解获取和释放锁的过程 使用CAS的方式去尝试修改state变量。   
-[AQS](https://github.com/nibnait/algorithm/tree/master/src/main/java/jdk/concurrent/AQS)
+[AQS](https://github.com/nibnait/algorithms/tree/master/src/main/java/jdk/concurrent/AQS)
 
 ## 信号量
 
-使用Semaphore 信号量来对对象池进行限流 [ObjectPool](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/ObjectPool.java)
+使用Semaphore 信号量来对对象池进行限流 [ObjectPool](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/ObjectPool.java)
 
 ## 读写锁
 
-ReadWriteLock 读锁无法升级为写锁。但是支持锁的降级 [Cache](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/Cache.java)
+ReadWriteLock 读锁无法升级为写锁。但是支持锁的降级 [Cache](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/Cache.java)
 
-StamptedLock 是不可重入锁。支持锁的降级（通过tryConvertToReadLock() 方法实现）和升级（通过tryConvertToWriteLock() 方法实现）[Point](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/Point.java)
+StamptedLock 是不可重入锁。支持锁的降级（通过tryConvertToReadLock() 方法实现）和升级（通过tryConvertToWriteLock() 方法实现）[Point](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/Point.java)
 
 ## 如何预防死锁
 
@@ -140,14 +140,14 @@ StamptedLock 是不可重入锁。支持锁的降级（通过tryConvertToReadLoc
 
 join
 
-[多线程同步](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/threadpool/a0_多线程同步.java)：**CountDownLatch**、**CyclicBarrier**
+[多线程同步](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/threadpool/a0_多线程同步.java)：**CountDownLatch**、**CyclicBarrier**
 
 ## 并发工具类
 
-简单的并行任务：[FutureTaskDemo](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/threadpool/b1_FutureTaskDemo.java)
+简单的并行任务：[FutureTaskDemo](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/threadpool/b1_FutureTaskDemo.java)
 
-任务之间有聚合关系：[CompletableFutureDemo](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/threadpool/b2_CompletableFutureDemo.java)
+任务之间有聚合关系：[CompletableFutureDemo](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/threadpool/b2_CompletableFutureDemo.java)
 
-管理批量并行任务：[CompletionServiceDemo](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/threadpool/b3_CompletionServiceDemo.java)
+管理批量并行任务：[CompletionServiceDemo](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/threadpool/b3_CompletionServiceDemo.java)
 
-**ForkJoinPool** 单机版的MapReduce [FockJoinDemo](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/threadpool/c1_FockJoinDemo.java)、[WordCountDemo](https://github.com/nibnait/algorithm/blob/master/src/main/java/jdk/concurrent/demo/threadpool/c2_FockJoinDemo2.java)
+**ForkJoinPool** 单机版的MapReduce [FockJoinDemo](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/threadpool/c1_FockJoinDemo.java)、[WordCountDemo](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/threadpool/c2_FockJoinDemo2.java)
