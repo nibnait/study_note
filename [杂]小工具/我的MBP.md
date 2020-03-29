@@ -23,6 +23,8 @@
 
 [Sourcetree](https://www.sourcetreeapp.com/)
 
+### [Logitech Options](https://www.logitech.com.cn/zh-cn/product/options)
+
 ### [Sublime Text 3](https://www.sublimetext.com/)
 
 ```
