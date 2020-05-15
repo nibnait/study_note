@@ -1,134 +1,159 @@
-# 我的mbp
-[搜狗输入法](https://pinyin.sogou.com/mac/)  
-[百度网盘](https://pan.baidu.com/)  
-[Surge](http://nssurge.com/)  
+1. <details class="details-reset details-overlay details-
 
-## 触发角
+   # 我的mbp
 
-## App Store
-- 万年历
-- Manico
+   [搜狗输入法](https://pinyin.sogou.com/mac/)
+   [百度网盘](https://pan.baidu.com/)
+   [Surge](http://nssurge.com/)
 
+   ## 触发角
 
-## 百度云
-- Spectacle+1.2
-- Alfred     youdao
-- [typora](https://www.typora.io/#download)
-- [Snipaste](https://zh.snipaste.com/)
+   ## App Store
 
-## 去官网下载最新版
-### [XCode](https://developer.apple.com/download/more/?=xcode)
-### [clean my mac](https://macpaw.com/cleanmymac)
-### [MarginNote](https://www.marginnote.com/chinese/home)
+   - 万年历
+   - Manico
 
-[Sourcetree](https://www.sourcetreeapp.com/)
+   ## 百度云
 
-### [Logitech Options](https://www.logitech.com.cn/zh-cn/product/options)
+   - [Spectacle+1.2](https://www.spectacleapp.com/)
+   - Alfred youdao
+   - [typora](https://www.typora.io/#download)
+   - [Snipaste](https://zh.snipaste.com/)
 
-### [Sublime Text 3](https://www.sublimetext.com/)
+   ## 去官网下载最新版
 
-```
-ctrl + `
+   ### [XCode](https://developer.apple.com/download/more/?=xcode)
 
-获取package control最新安装代码：[https://packagecontrol.io/installation](https://packagecontrol.io/installation)
+   ### [clean my mac](http://www.mycleanmymac.com/xiazai.html)
 
-cmd+shift+p
-package control: install package
-cmd+shift+p
-pretty json
+   [Paragon NTFS for Mac](https://my.paragon-software.com/)
 
-Preferences —> Key Bindings：
-[
-	{ "keys": ["super+i"], "command": "copy_path" }
-]
-```
+   ### [MarginNote](https://www.marginnote.com/chinese/home)
 
-### [idea](https://www.jetbrains.com/idea/)
+   [Sourcetree](https://www.sourcetreeapp.com/)
 
-历史版本：[https://www.jetbrains.com/idea/download/other.html](https://www.jetbrains.com/idea/download/other.html)
+   ### [Logitech Options](https://www.logitech.com.cn/zh-cn/product/options)
 
-```
-"Configure" 或 "Help" -> "Edit Custom VM Options ..."：
--javaagent:/Users/nibnait/jetbrains-agent.jar
--javaagent:/Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/pirvate Files/jetbrains-agent.jar
+   ### [Sublime Text 3](https://www.sublimetext.com/)
 
-License server激活：http://jetbrains-license-server
+   ```
+   ctrl + `
+   
+   获取package control最新安装代码：[https://packagecontrol.io/installation](https://packagecontrol.io/installation)
+   
+   cmd+shift+p
+   package control: install package
+   cmd+shift+p
+   pretty json
+   
+   Preferences —> Key Bindings：
+   [
+   	{ "keys": ["super+i"], "command": "copy_path" }
+   ]
+   ```
 
-Code Templates：
-/*
+   ### [idea](https://www.jetbrains.com/idea/)
 
-Created by ${USER} on ${DATE}
- */
-public class ${NAME} extends TestCase {
+   历史版本：https://www.jetbrains.com/idea/download/other.html
 
-    @Test
-    public void testCase() {
+   ```
+   "Configure" 或 "Help" -> "Edit Custom VM Options ..."：
+   -javaagent:/Users/nibnait/jetbrains-agent.jar
+   -javaagent:/Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/pirvate Files/jetbrains-agent.jar
+   
+   License server激活：http://jetbrains-license-server
+   
+   Code Templates：
+   /*
+   
+   Created by ${USER} on ${DATE}
+    */
+   public class ${NAME} extends TestCase {
+   
+       @Test
+       public void testCase() {
+   
+       }
+   
+   
+   }
+   ```
 
-    }
+   JDK 1.8：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+   JDK 1.7：http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+   JDK 1.6：http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html
+   JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase5-419410.html
 
+   ### [iterm2](https://iterm2.com/)
 
-}
-```
+   #### 安装HomeBrew
 
+   ```
+    xcode-select --install
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   ```
 
+   #### 安装Oh My Zsh
 
-JDK 1.8：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  
-JDK 1.7：http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html  
-JDK 1.6：http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html  
-JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase5-419410.html
+   ```
+   brew install git
+   brew install Zsh
+   brew install wget
+   brew install unrar
+   brew search 7z
+   brew install p7zip
+   
+   sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-Zsh/master/tools/install.sh -O -)"
+   
+   添加alias:
+   vim ~/.zshrc
+   G 
+   o
+   
+   alias study="cd /Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/Study_Note/"
+   
+   MAVEN_HOME=/Users/nibnait/apache-maven-3.6.3
+   PATH=$PATH:$MAVEN_HOME/bin:/usr/local/mysql/bin
+   
+   
+   source ~/.zshrc
+   ```
 
-### [iterm2](https://iterm2.com/)
+   ### [maven](https://maven.apache.org/download.cgi)
 
-#### 安装HomeBrew
-     xcode-select --install
-     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   [MySQL](https://dev.mysql.com/downloads/mysql/5.7.html)
 
-#### 安装Oh My Zsh
-    brew install git
-    brew install Zsh
-    brew install wget
-    sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-Zsh/master/tools/install.sh -O -)"
-    
-    添加alias:
-    vim ~/.zshrc
-    G 
-    o
-    alias study="cd /Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/Study_Note/"
-    source ~/.zshrc
+   ```
+   mysql -u root -p
+   set PASSWORD =PASSWORD('root');
+   ```
 
+   ### [gradle](https://gradle.org/releases/)
 
-### [maven](https://maven.apache.org/download.cgi)
-### [gradle](https://gradle.org/releases/)
+   ssh-keygen -t rsa -C "[w@tianbin.org](mailto:w@tianbin.org)"
 
-ssh-keygen -t rsa -C "w@tianbin.org"  
+   git config --global user.name nibnait
+   git config --global user.email [w@tianbin.org](mailto:w@tianbin.org)
 
-git config --global user.name nibnait  
-git config --global user.email  w@tianbin.org
+   
 
-```
-git config --edit
-[core]
-        ignorecase = false
-```
+   git config --global --edit
 
-```
-git config --global --edit
-[user]
-        name = nibnait
-        email = w@tianbin.org
-[core]
-        ignorecase = false                  
-```
+   ```
+   [user]
+           name = nibnait
+           email = w@tianbin.org
+   [core]
+           ignorecase = false                  
+   ```
 
+   ### Chrome插件
 
+   Web前端助手（FeHelper）- crx文件安装方法
 
-### Chrome插件
+   安装方法
 
-Web前端助手（FeHelper）- crx文件安装方法
-
-安装方法
-
-1. 下载当前最新版`*.crx`  [https://github.com/zxlie/FeHelper/tree/master/apps/static/screenshot/crx](https://github.com/zxlie/FeHelper/tree/master/apps/static/screenshot/crx)
-2. chrome浏览器地址栏输入：[chrome://extensions/](chrome://extensions/) 并打开
-3. 右上角开启`开发者模式`
-4. 拖拽crx到当前页面，完成安装
+   1. 下载当前最新版`*.crx` https://github.com/zxlie/FeHelper/tree/master/apps/static/screenshot/crx
+   2. chrome浏览器地址栏输入：chrome://extensions/ 并打开
+   3. 右上角开启`开发者模式`
+   4. 拖拽crx到当前页面，完成安装
