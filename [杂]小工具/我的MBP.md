@@ -11,14 +11,17 @@
 
 
 ## 百度云
-- Spectacle+1.2
+- [Spectacle+1.2](https://www.spectacleapp.com/)
 - Alfred     youdao
 - [typora](https://www.typora.io/#download)
 - [Snipaste](https://zh.snipaste.com/)
 
 ## 去官网下载最新版
 ### [XCode](https://developer.apple.com/download/more/?=xcode)
-### [clean my mac](https://macpaw.com/cleanmymac)
+### [clean my mac](http://www.mycleanmymac.com/xiazai.html)
+
+[Paragon NTFS for Mac]( https://my.paragon-software.com)
+
 ### [MarginNote](https://www.marginnote.com/chinese/home)
 
 [Sourcetree](https://www.sourcetreeapp.com/)
@@ -87,17 +90,39 @@ JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-a
     brew install git
     brew install Zsh
     brew install wget
+    brew install unrar
+    brew search 7z
+    brew install p7zip
+    
     sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-Zsh/master/tools/install.sh -O -)"
     
     添加alias:
     vim ~/.zshrc
     G 
     o
+    
     alias study="cd /Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/Study_Note/"
+    
+    MAVEN_HOME=/Users/nibnait/apache-maven-3.6.3
+    PATH=$PATH:$MAVEN_HOME/bin:/usr/local/mysql/bin
+    
+    
     source ~/.zshrc
-
+    
+    
 
 ### [maven](https://maven.apache.org/download.cgi)
+
+[MySQL](https://dev.mysql.com/downloads/mysql/5.7.html)
+
+```
+mysql -u root -p
+set PASSWORD =PASSWORD('root');
+
+```
+
+
+
 ### [gradle](https://gradle.org/releases/)
 
 ssh-keygen -t rsa -C "w@tianbin.org"  
@@ -131,4 +156,4 @@ Web前端助手（FeHelper）- crx文件安装方法
 1. 下载当前最新版`*.crx`  [https://github.com/zxlie/FeHelper/tree/master/apps/static/screenshot/crx](https://github.com/zxlie/FeHelper/tree/master/apps/static/screenshot/crx)
 2. chrome浏览器地址栏输入：[chrome://extensions/](chrome://extensions/) 并打开
 3. 右上角开启`开发者模式`
-4. 拖拽crx到当前页面，完成安装
+4. 拖拽crx到当前页面，完成安装œ
