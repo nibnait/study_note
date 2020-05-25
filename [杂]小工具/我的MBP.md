@@ -19,23 +19,24 @@
    - Alfred youdao
    - [typora](https://www.typora.io/#download)
    - [Snipaste](https://zh.snipaste.com/)
-
-   ## 去官网下载最新版
-
-   ### [XCode](https://developer.apple.com/download/more/?=xcode)
-
-   ### [clean my mac](http://www.mycleanmymac.com/xiazai.html)
-
-   [Paragon NTFS for Mac](https://my.paragon-software.com/)
-
-   ### [MarginNote](https://www.marginnote.com/chinese/home)
-
-   [Sourcetree](https://www.sourcetreeapp.com/)
-
-   ### [Logitech Options](https://www.logitech.com.cn/zh-cn/product/options)
-
-   ### [Sublime Text 3](https://www.sublimetext.com/)
-
+- AirServer
+   
+## 去官网下载最新版
+   
+### [XCode](https://developer.apple.com/download/more/?=xcode)
+   
+### [clean my mac](http://www.mycleanmymac.com/xiazai.html)
+   
+[Paragon NTFS for Mac](https://my.paragon-software.com/)
+   
+### [MarginNote](https://www.marginnote.com/chinese/home)
+   
+[Sourcetree](https://www.sourcetreeapp.com/)
+   
+### [Logitech Options](https://www.logitech.com.cn/zh-cn/product/options)
+   
+### [Sublime Text 3](https://www.sublimetext.com/)
+   
    ```
    ctrl + `
    
@@ -50,12 +51,12 @@
    [
    	{ "keys": ["super+i"], "command": "copy_path" }
    ]
-   ```
-
-   ### [idea](https://www.jetbrains.com/idea/)
-
-   历史版本：https://www.jetbrains.com/idea/download/other.html
-
+```
+   
+### [idea](https://www.jetbrains.com/idea/)
+   
+历史版本：https://www.jetbrains.com/idea/download/other.html
+   
    ```
    "Configure" 或 "Help" -> "Edit Custom VM Options ..."：
    -javaagent:/Users/nibnait/jetbrains-agent.jar
@@ -77,24 +78,24 @@
    
    
    }
-   ```
-
+```
+   
    JDK 1.8：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
    JDK 1.7：http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
    JDK 1.6：http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html
-   JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase5-419410.html
-
-   ### [iterm2](https://iterm2.com/)
-
-   #### 安装HomeBrew
-
+JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase5-419410.html
+   
+### [iterm2](https://iterm2.com/)
+   
+#### 安装HomeBrew
+   
    ```
     xcode-select --install
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-   ```
-
-   #### 安装Oh My Zsh
-
+```
+   
+#### 安装Oh My Zsh
+   
    ```
    brew install git
    brew install Zsh
@@ -117,42 +118,42 @@
    
    
    source ~/.zshrc
-   ```
-
-   ### [maven](https://maven.apache.org/download.cgi)
-
-   [MySQL](https://dev.mysql.com/downloads/mysql/5.7.html)
-
+```
+   
+### [maven](https://maven.apache.org/download.cgi)
+   
+[MySQL](https://dev.mysql.com/downloads/mysql/5.7.html)
+   
    ```
    mysql -u root -p
    set PASSWORD =PASSWORD('root');
-   ```
-
-   ### [gradle](https://gradle.org/releases/)
-
-   ssh-keygen -t rsa -C "[w@tianbin.org](mailto:w@tianbin.org)"
-
+```
+   
+### [gradle](https://gradle.org/releases/)
+   
+ssh-keygen -t rsa -C "[w@tianbin.org](mailto:w@tianbin.org)"
+   
    git config --global user.name nibnait
-   git config --global user.email [w@tianbin.org](mailto:w@tianbin.org)
-
+git config --global user.email [w@tianbin.org](mailto:w@tianbin.org)
    
 
-   git config --global --edit
-
+   
+git config --global --edit
+   
    ```
    [user]
            name = nibnait
            email = w@tianbin.org
    [core]
            ignorecase = false                  
-   ```
-
-   ### Chrome插件
-
-   Web前端助手（FeHelper）- crx文件安装方法
-
-   安装方法
-
+```
+   
+### Chrome插件
+   
+Web前端助手（FeHelper）- crx文件安装方法
+   
+安装方法
+   
    1. 下载当前最新版`*.crx` https://github.com/zxlie/FeHelper/tree/master/apps/static/screenshot/crx
    2. chrome浏览器地址栏输入：chrome://extensions/ 并打开
    3. 右上角开启`开发者模式`
