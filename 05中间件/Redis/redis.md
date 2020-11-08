@@ -28,6 +28,9 @@ mathjax: true
 ## Codis vs Cluster
 
 ## 限流 - 时间窗口
+令牌桶
+限流漏斗
+zset  访问时间作为score
 
 ## 分布式锁
 

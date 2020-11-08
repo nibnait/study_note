@@ -25,9 +25,9 @@ BIO（blocking IO）：阻塞IO，用户线程进行IO操作时，有可能造�
 
 NIO（no-blocking IO）：非阻塞IO。
 
-- 典型的非阻塞IO，是采用一个死循环的机制，进行对内核的IO请求，知道内核将数据准备好，则跳出循环进行IO的读写。
+- 典型的非阻塞IO，是采用一个死循环的机制，进行对内核的IO请求，直到内核将数据准备好，则跳出循环进行IO的读写。
 
-- 多路复用IO，采用一个selector内核线程，去轮询用户线程，是否需要进行IO操作，需要则提用户线程去准备数据，然后也是由用户现场进行IO读写。
+- 多路复用IO，采用一个selector内核线程，去轮询用户线程，是否需要进行IO操作，需要则替用户线程去准备数据，然后也是由用户现场进行IO读写。
 
   缺点就是：当某一个用户线程的IO块较大时，会影响后续的用户线程以及新的IO事件。
 
@@ -43,18 +43,18 @@ NIO适用于连接数多且连接较短的场景比如聊天服务器。AIO适�
 
 # synchronized
 
-当修饰静态方法的时候,锁定的是当前类的Class对象,在上面的例子中就是Class X
-当修饰非静态方法的时候,锁定的是当前实例对象this
+当修饰静态方法的时候，锁定的是当前类的Class对象，
+当修饰非静态方法的时候，锁定的是当前实例对象this
 
 synchronized关键字 及wait()、notify()、notifyAll()共同组成了 [管程](https://github.com/nibnait/algorithms/blob/master/src/main/java/jdk/concurrent/demo/BlockedQueue.java)（管理共享变量 以及对共享变量的操作过程） 
 
 与Lock相比：
  - 都是可重入锁
- - synchronized是非公平锁。ReentrantLock默认是分非公平锁，可手动设为公平锁。
+ - synchronized是非公平锁。ReentrantLock默认是分非公平锁，可手动设为公平锁。（ new ReentrantLock(true); ）
  - synchronized不可中断（只有在执行过程中抛异常、或执行结束，才会自动释放锁）  
     LockInterruptibly()方法可以中断自己，也可以被其他线程中断。Lock必须手动unlock()，否则会造成死锁
     - 使用synchronized，有时等待线程会一直等下去，不会响应中断
-    - Lock 还可以滴啊用await() 方法让出锁资源，同时调用notify() 通知其他线程来重新获取资源。
+    - Lock 还可以用await() 方法让出锁资源，同时调用notify() 通知其他线程来重新获取资源。
 
 synchronized适合低并发的场景，锁竞争发生的概率很小，此时锁处于偏向锁或者轻量级锁状态，因此性能更加好，比如jdk1.8concurrentHashMap使用synchronized的原因就是，每个hash槽上的锁竞争很少，用synchronized比lock更好
 
@@ -94,6 +94,12 @@ StamptedLock 是不可重入锁。支持锁的降级（通过tryConvertToReadLoc
 - 破坏“占用且等待”条件：创建线程前，一次性申请所有资源。
 - 破坏“不可抢占”条件：设置超时机制，如果A线程迟迟获取不到某资源，超时主动释放它所占有的全部资源
 - 破坏“循环等待”条件：将资源编号，X(1号)，Y(2号)，线程申请资源时，按编号顺序申请，在拿到Y之前必须先申请X。
+
+### 最佳实践
+
+- 永远只在更新对象时加锁
+- 永远只在访问可变成员时加锁
+- 永远不在调用其他对象的方法时加锁（防止“其他”方法有线程的sleep()、I/O操作等影响性能）
 
 ### 无锁化编程
 
