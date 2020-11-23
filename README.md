@@ -12,14 +12,20 @@
 
 # Road Map
 
-- 并发
+# 并发
   - 线程间的协作  
     join()  
     wait()、notify()/notifyAll()  
     await()、signal()/signalAll()  
   - 线程池有哪些参数？说说BlockedQueue
-  - 
+  
 # 锁  
 ## 悲观锁 vs 乐观锁
 ### synchronized ReentrantLock
 ### CAS  
+
+## 自旋锁vs适应性自旋锁
+## 无锁vs偏向锁vs轻量级锁vs重量级锁
+## 可重入锁vs非可重入锁
+## 独享锁vs共享锁
+
