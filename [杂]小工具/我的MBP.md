@@ -57,12 +57,6 @@
 历史版本：https://www.jetbrains.com/idea/download/other.html
 
    ```
-   "Configure" 或 "Help" -> "Edit Custom VM Options ..."：
-   -javaagent:/Users/nibnait/jetbrains-agent.jar
-   -javaagent:/Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/pirvate Files/jetbrains-agent.jar
-   
-   License server激活：http://jetbrains-license-server
-   
    Code Templates：
    /*
    
