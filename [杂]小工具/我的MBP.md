@@ -1,4 +1,3 @@
-
 # 我的mbp
 
 [搜狗输入法](https://pinyin.sogou.com/mac/)
@@ -18,10 +17,8 @@
 - Alfred youdao
 - [typora](https://www.typora.io/#download)
 - [Snipaste](https://zh.snipaste.com/)
-- [draw.io](https://draw.io)
-- [Logitech Options](https://www.logitech.com.cn/zh-cn/product/options)（Options_8.20.233.zip）
-
 - AirServer
+  
 ## 去官网下载最新版
 
 ### [XCode](https://developer.apple.com/download/more/?=xcode)
@@ -33,6 +30,14 @@
 ### [MarginNote](https://www.marginnote.com/chinese/home)
 
 [Sourcetree](https://www.sourcetreeapp.com/)
+
+### [Logitech Options](https://www.logitech.com.cn/zh-cn/product/options)
+
+[visual paradigm 社区版](https://www.visual-paradigm.com/cn/download/community.jsp)
+
+[ezip](https://ezip.awehunt.com/)
+
+[Visual VM](https://visualvm.github.io/download.html)
 
 ### [Sublime Text 3](https://www.sublimetext.com/)
 
@@ -48,7 +53,7 @@
    
    Preferences —> Key Bindings：
    [
-   	{ "keys": ["super+i"], "command": "copy_path" }
+    { "keys": ["super+i"], "command": "copy_path" }
    ]
    ```
 
@@ -56,21 +61,31 @@
 
 历史版本：https://www.jetbrains.com/idea/download/other.html
 
+```
+Fully Expand Tree Node  alt+鼠标滚轮下
+collapse tree node   alt+鼠标滚轮上
+```
+
+
+
+Code Templates：
+
    ```
-   Code Templates：
-   /*
-   
-   Created by ${USER} on ${DATE}
-    */
-   public class ${NAME} extends TestCase {
-   
-       @Test
-       public void testCase() {
-   
-       }
-   
-   
-   }
+import org.junit.Test;
+
+/*
+
+Created by ${USER} on ${DATE}
+*/
+public class ${NAME} {
+
+    @Test
+    public void testCase() {
+
+    }
+
+
+}
    ```
 
    JDK 1.8：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
@@ -85,10 +100,6 @@ JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-a
    ```
     xcode-select --install
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-    github源不好使了的话 可以用这个
-    /usr/bin/ruby -e "$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install)"
-
    ```
 
 #### 安装Oh My Zsh
@@ -108,10 +119,22 @@ JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-a
    G 
    o
    
-   alias study="cd /Users/nibnait/Library/Mobile\ Documents/com\~apple\~CloudDocs/Study_Note/"
-   
-   MAVEN_HOME=/Users/nibnait/apache-maven-3.6.3
-   PATH=$PATH:$MAVEN_HOME/bin:/usr/local/mysql/bin
+alias study="cd /Users/nibnait/github/Study_Note"
+alias redis="/Users/nibnait/redis-6.0.9/src/redis-server /Users/nibnait/redis-6.0.9/redis.conf"
+alias rcli="/Users/nibnait/redis-6.0.9/src/redis-cli"
+alias gcu="git checkout master_uat"
+alias gcr="git checkout release"
+alias nrm="sudo npm run mall-dev"
+alias rime="cd /Users/nibnait/Library/Rime"
+# alias mvp="mvn clean package -DskipTests"
+# alias mvd="mvn clean deploy -DskipTests"
+alias mvp="mvn clean package -Dmaven.test.skip=true"
+alias mvd="mvn clean deploy -Dmaven.test.skip=true"
+alias mvc="mvn clean"
+
+export MAVEN_HOME=/Users/nibnait/apache-maven-3.6.3
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home
+export PATH=$PATH:$MAVEN_HOME/bin:/usr/local/mysql/bin:$JAVA_HOME/bin
    
    
    source ~/.zshrc
@@ -145,6 +168,25 @@ git config --global --edit
            ignorecase = false                  
    ```
 
+## 系统快捷键
+
+系统偏好设置->键盘->快捷键->应用快捷键
+
+```
+mail
+Format->Lists->Insert Bulleted List     cmd+shift+b
+Format->Lists->Insert Numbered List     cmd_shift+n
+
+note
+Format->Bulleted List     cmd+shift+b
+Format->Numbered List     cmd_shift+n
+
+```
+
+
+
+
+
 ### Chrome插件
 
 Web前端助手（FeHelper）- crx文件安装方法
@@ -155,3 +197,17 @@ Web前端助手（FeHelper）- crx文件安装方法
    2. chrome浏览器地址栏输入：chrome://extensions/ 并打开
    3. 右上角开启`开发者模式`
    4. 拖拽crx到当前页面，完成安装
+
+
+
+https://zhuzhengyuan.xyz/2018/11/23/the-compatibility-issues-in-macos-mojave/
+
+```
+终端启动报错
+问题描述
+打开终端时，直接报错 manpath: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'
+解决方案
+升级 xcode 和 commandline tools.
+在应用商店里升级 xcode 后，运行 xcode-select --install. 再重启终端即可。
+```
+
