@@ -39,12 +39,13 @@
 
 [Visual VM](https://visualvm.github.io/download.html)
 
-### [Sublime Text 3](https://www.sublimetext.com/)
+### [Sublime Text](https://www.sublimetext.com/)  [https://packagecontrol.io/installation](https://packagecontrol.io/installation)
 
    ```
    ctrl + `
    
-   获取package control最新安装代码：[https://packagecontrol.io/installation](https://packagecontrol.io/installation)
+   获取package control最新安装代码：
+   import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
    
    cmd+shift+p
    package control: install package
@@ -53,9 +54,18 @@
    
    Preferences —> Key Bindings：
    [
-    { "keys": ["super+i"], "command": "copy_path" }
-   ]
+      {"keys":["super+i"],"command":"copy_path"},
+   	  {"keys":["super+ctrl+j"],"command":"pretty_json"},      
+      { "keys": ["super+d"], "command": "duplicate_line" }
+    ]
    ```
+
+#### Prety Json Manual Installation https://packagecontrol.io/packages/Pretty%20JSON
+
+- `cd <Packages directory>` (MacOS: `~/Library/Application\ Support/Sublime\ Text/Packages`)
+- `git clone https://github.com/dzhibas/SublimePrettyJson.git "Pretty JSON"`
+
+
 
 ### [idea](https://www.jetbrains.com/idea/)
 
@@ -131,6 +141,7 @@ alias rime="cd /Users/nibnait/Library/Rime"
 alias mvp="mvn clean package -Dmaven.test.skip=true"
 alias mvd="mvn clean deploy -Dmaven.test.skip=true"
 alias mvc="mvn clean"
+alias mybatis="cd /Users/nibnait/software/mybatis-generator-gui && java -jar mybatis-generator-gui.jar"
 
 export MAVEN_HOME=/Users/nibnait/apache-maven-3.6.3
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home

@@ -1,6 +1,6 @@
 参考资料：http://jartto.wang/2018/12/11/git-rebase/
 
-# cherry pick
+# Git rebase 变基
 
 > gcam 'update'
 
@@ -37,7 +37,7 @@ s b8bf2e1 update										//squash：将本提交合并到pick出来的提交上
 
 这一步的目的：
 
-![](../image/git_rebase_1.png)
+![](../../image/git_rebase_1.png)
 
 解决好冲突之后：
 
