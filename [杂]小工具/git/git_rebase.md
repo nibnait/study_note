@@ -52,3 +52,14 @@ s b8bf2e1 update										//squash：将本提交合并到pick出来的提交上
 - 当与别人协作开发一个feature分支时，不要使用变基操作。你本地好了，人家本地没有进行变基，他在提交时会造成提交记录丢失
 
 - 当要启动一个落后很久的feature分支时，就不要变基了，冲突太多了。
+
+# 移除某个commit
+
+```css
+1.git log获取commit信息 
+2.git rebase -i (commit-id) 
+commit-id 为要删除的commit的下一个commit号 
+3.编辑文件，将要删除的commit之前的单词改为drop 
+4.保存文件退出大功告成 
+5.git log查看
+```
