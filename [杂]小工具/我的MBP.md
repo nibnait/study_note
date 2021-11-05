@@ -129,7 +129,7 @@ JDK 1.5：http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-a
    G 
    o
    
-alias study="cd /Users/nibnait/github/Study_Note"
+alias study="cd /Users/nibnait/百度网盘/Study_Note"
 alias redis="/Users/nibnait/redis-6.0.9/src/redis-server /Users/nibnait/redis-6.0.9/redis.conf"
 alias rcli="/Users/nibnait/redis-6.0.9/src/redis-cli"
 alias gcu="git checkout master_uat"
