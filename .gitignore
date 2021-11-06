@@ -3,3 +3,4 @@ study.sublime-project
 study.sublime-workspace
 private/*
 */Collections.*
+*.DS_Store
